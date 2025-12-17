@@ -1,0 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom styles can be added here */
+.nav-link:hover {
+    color: #2563eb; /* Blue-600 */
+    transition: color 0.3s ease;
+}
