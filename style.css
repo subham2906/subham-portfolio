@@ -1,9 +1,71 @@
-html {
-    scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1d1d1f;
+    margin: 0;
+    line-height: 1.6;
 }
 
-/* Custom styles can be added here */
-.nav-link:hover {
-    color: #2563eb; /* Blue-600 */
-    transition: color 0.3s ease;
+/* Minimalist container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Simple Navigation like Rajdeep's */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #86868b;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* The Big Hero Greeting */
+.hero {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #86868b;
+}
+
+/* Minimalist Card for Certifications */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid #e5e5e7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: #000;
 }
